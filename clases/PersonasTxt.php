@@ -4,7 +4,7 @@ class Persona
 //--------------------------------------------------------------------------------//
 //--ATRIBUTOS
 	private $nombre;
- 	private $apellido;
+ 	private $pass;
   	private $dni;
   	private $foto;
 //--------------------------------------------------------------------------------//
@@ -13,7 +13,7 @@ class Persona
 //--GETTERS Y SETTERS
 	public function GetApellido()
 	{
-		return $this->apellido;
+		return $this->pass;
 	}
 	public function GetNombre()
 	{
@@ -28,7 +28,7 @@ class Persona
 		return $this->foto;
 	}
 
-	public function SetApellido($valor)
+	public function SetPass($valor)
 	{
 		$this->apellido = $valor;
 	}
@@ -62,7 +62,7 @@ class Persona
 //--TOSTRING	
   	public function ToString()
 	{
-	  	return $this->apellido."-".$this->nombre."-".$this->dni."-".$this->foto;
+	  	return $this->nombre."-".$this->pass."-".$this->foto;
 	}
 //--------------------------------------------------------------------------------//
 
